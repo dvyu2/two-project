@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bank-account", "bank-account\bank-account.csproj", "{45332655-519E-422D-A0E2-E9688719194A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bank-account", "bank-account.csproj", "{DE8AEE49-1D9E-48B3-8E49-433D2DCCC135}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{45332655-519E-422D-A0E2-E9688719194A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45332655-519E-422D-A0E2-E9688719194A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45332655-519E-422D-A0E2-E9688719194A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45332655-519E-422D-A0E2-E9688719194A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8AEE49-1D9E-48B3-8E49-433D2DCCC135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8AEE49-1D9E-48B3-8E49-433D2DCCC135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8AEE49-1D9E-48B3-8E49-433D2DCCC135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8AEE49-1D9E-48B3-8E49-433D2DCCC135}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
