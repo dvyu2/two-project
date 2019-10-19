@@ -10,13 +10,11 @@ namespace bank_account
     {
         public string owner;
         public decimal balance;
-        public string name;
 
-        public Account(string o, decimal b, string n)
+        public Account(string o, decimal b)
         {
             this.owner = o;
             this.balance = b;
-            this.name = n;
         }
     }
 }
