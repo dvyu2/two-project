@@ -8,6 +8,7 @@ namespace bank_account
 {
     interface IAccount
     {
-        public decimal GetBalance()
+        decimal ShowName();
+        decimal GetBalance();
     }
 }

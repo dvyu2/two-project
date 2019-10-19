@@ -15,7 +15,11 @@ namespace bank_account
         {
             this.bankName = n;
             this.cardNumber = c;
+        }
 
+        public override decimal GetBalance()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -16,5 +16,10 @@ namespace bank_account
             this.blockchainName = n;
             this.publicAddress = p;
         }
+
+        public override decimal GetBalance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
