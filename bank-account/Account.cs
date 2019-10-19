@@ -11,10 +11,10 @@ namespace bank_account
         public string owner;
         public decimal balance;
 
-        public Account(string o, decimal b)
+        public Account(string owner, decimal balance)
         {
-            this.owner = o;
-            this.balance = b;
+            this.owner = owner;
+            this.balance = balance;
         }
 
         public virtual decimal GetBalance()

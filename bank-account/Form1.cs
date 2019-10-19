@@ -12,12 +12,12 @@ namespace bank_account
 {
     public partial class Form1 : Form
     {
-        public string[] AccountTypes = new[] { "Банк Акаунт", "Блокчейн Акаунт" };
+        public Account[] AccountTypes = new Account[] { new BankAccount("",0, "Банк Акаунт",""), new BlockchainAccount("", 0, "Блокчейн Акаунт", "") };
         public Form1()
         {
             InitializeComponent();
             //var AccountTypes = new[] { "Банк Акаунт", "Блокчейн Акаунт" };
-            comboBox1.DataSource = AccountTypes;
+            comboBox1.DataSource = new[] { "Банк Акаунт", "Блокчейн Акаунт" };
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -31,13 +31,13 @@ namespace bank_account
             switch (currentcomboBox1Index)
             {
                 case 0:
-                    label1.Text = AccountTypes[0];
+                    //label1.Text = AccountTypes[0];
+                    //decimal balance = BlockchainAccount.GetBalance();
                     break;
                 case 1:
-                    label1.Text = AccountTypes[1];
+                    //label1.Text = AccountTypes[1];
                     break;
             }
-            //label1.Text = "Hello";
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -11,10 +11,10 @@ namespace bank_account
         public string blockchainName;
         public string publicAddress;
 
-        public BlockchainAccount(string o, decimal b, string n, string p) : base(o, b)
+        public BlockchainAccount(string owner, decimal balance, string blockchainname, string publicaddress) : base(owner, balance)
         {
-            this.blockchainName = n;
-            this.publicAddress = p;
+            this.blockchainName = blockchainname;
+            this.publicAddress = publicaddress;
         }
 
         public override decimal GetBalance()

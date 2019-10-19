@@ -11,10 +11,10 @@ namespace bank_account
         public string bankName;
         public string cardNumber;
 
-        public BankAccount(string o, decimal b, string n, string c) : base(o, b)
+        public BankAccount(string owner, decimal balance, string bankname, string cardnumber) : base(owner, balance)
         {
-            this.bankName = n;
-            this.cardNumber = c;
+            this.bankName = bankname;
+            this.cardNumber = cardnumber;
         }
 
         public override decimal GetBalance()
