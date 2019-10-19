@@ -15,6 +15,7 @@ namespace bank_account
         {
             this.bankName = n;
             this.cardNumber = c;
+
         }
     }
 }
