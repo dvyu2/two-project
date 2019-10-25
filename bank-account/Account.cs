@@ -19,10 +19,10 @@ namespace bank_account
 
         public virtual decimal GetBalance()
         {
-            retun balance;
+            return balance;
         }
 
-        public decimal ShowName()
+        public string ShowName()
         {
             return owner;
         }

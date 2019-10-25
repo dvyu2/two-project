@@ -8,7 +8,7 @@ namespace bank_account
 {
     interface IAccount
     {
-        decimal ShowName();
+        string ShowName();
         decimal GetBalance();
     }
 }
