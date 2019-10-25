@@ -12,7 +12,8 @@ namespace bank_account
 {
     public partial class Form1 : Form
     {
-        public Account[] AccountTypes = new Account[] { new BankAccount("",0, "Банк Акаунт",""), new BlockchainAccount("", 0, "Блокчейн Акаунт", "") };
+        //public Account[] AccountTypes = new Account[] { new BankAccount("",0, "Банк Акаунт Васи",""), new BlockchainAccount("", 0, "Блокчейн Акаунт Пети", "") };
+        public List<Account> AccountTypes = new List<Account> { new BankAccount("", 0, "Банк Акаунт Васи", ""), new BlockchainAccount("", 0, "Блокчейн Акаунт Пети", "") };
         public Form1()
         {
             InitializeComponent();
@@ -28,16 +29,8 @@ namespace bank_account
         private void button1_Click(object sender, EventArgs e)
         {
             int currentcomboBox1Index = comboBox1.SelectedIndex;
-            switch (currentcomboBox1Index)
-            {
-                case 0:
-                    //label1.Text = AccountTypes[0];
-                    //decimal balance = BlockchainAccount.GetBalance();
-                    break;
-                case 1:
-                    //label1.Text = AccountTypes[1];
-                    break;
-            }
+            IAccount account = AccountTypes[currentcomboBox1Index];
+            label1.Text = account.GetBalance().ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)

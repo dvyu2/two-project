@@ -11,7 +11,8 @@ namespace bank_account
         public string bankName;
         public string cardNumber;
 
-        public BankAccount(string owner, decimal balance, string bankname, string cardnumber) : base(owner, balance)
+        public BankAccount(string owner, decimal balance, string bankname, string cardnumber)
+            : base(owner, balance)
         {
             this.bankName = bankname;
             this.cardNumber = cardnumber;
@@ -19,7 +20,7 @@ namespace bank_account
 
         public override decimal GetBalance()
         {
-            throw new NotImplementedException();
+            return 10;
         }
     }
 }

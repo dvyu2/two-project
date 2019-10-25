@@ -19,12 +19,12 @@ namespace bank_account
 
         public virtual decimal GetBalance()
         {
-            throw new NotImplementedException();
+            retun balance;
         }
 
         public decimal ShowName()
         {
-            throw new NotImplementedException();
+            return owner;
         }
     }
 }

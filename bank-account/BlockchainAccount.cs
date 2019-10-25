@@ -11,7 +11,8 @@ namespace bank_account
         public string blockchainName;
         public string publicAddress;
 
-        public BlockchainAccount(string owner, decimal balance, string blockchainname, string publicaddress) : base(owner, balance)
+        public BlockchainAccount(string owner, decimal balance, string blockchainname, string publicaddress)
+            : base(owner, balance)
         {
             this.blockchainName = blockchainname;
             this.publicAddress = publicaddress;
@@ -19,7 +20,7 @@ namespace bank_account
 
         public override decimal GetBalance()
         {
-            throw new NotImplementedException();
+            return 20;
         }
     }
 }
